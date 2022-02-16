@@ -27,6 +27,7 @@ document.getElementById('calculate').addEventListener('click',function(){
     
    const total = totalExpense();
 
+   
    let myExpenses =document.getElementById('total-expense');
     myExpenses.innerText = total;
 
@@ -36,6 +37,11 @@ document.getElementById('calculate').addEventListener('click',function(){
     const leftMoney = myIncome - total;
     myBalance.innerText = leftMoney;
 
+    if(total > parseFloat(document.getElementById('income').value)){
+        alert('You Can Not Expense Money More Than Your Income');
+        myBalance.innerText = 0;
+    }
+   
 });
 
 document.getElementById('saving').addEventListener('click',function(){
@@ -46,6 +52,7 @@ document.getElementById('saving').addEventListener('click',function(){
     const calSave = mySaving/100;
     const mySave = myIncome * calSave;
     const savingAmount = document.getElementById('saving-amount');
+    
     savingAmount.innerText = mySave;
 
     // Total Expense
@@ -58,6 +65,11 @@ document.getElementById('saving').addEventListener('click',function(){
     const myRemaining = leftMoney - mySave;
     RemainingBalance.innerText = myRemaining;
     
+     if(myRemaining<0){
+        alert('You Can not Save Any Money');
+        RemainingBalance.innerText = 0;
+        savingAmount.innerText = 0;
+    }
 });
 
 
