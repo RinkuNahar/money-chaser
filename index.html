@@ -27,18 +27,18 @@
                     <!-- Calculate Expenses -->
               
                     <h3 class="text-center mt-2">Income</h3>
-                    <p class="text-center fw-bolder">Income : <input class="ms-2 input" type="text"></p>
+                    <p class="text-center fw-bolder" >Income : <input class="ms-2 input" id="income" type="text"></p>
                     <h3 class="text-center  mt-2">Expense</h3>
-                    <p class="text-center fw-bolder">Food: <input class="ms-2 input" type="text"></p>
-                    <p class="text-center fw-bolder">Rent:  <input class="ms-3 input" type="text"></p>
-                    <p class="text-center fw-bolder">Cloths: <input type="text input"></p>
-                    <p class="text-center fw-bolder"> <button type="button " class="btn btn-primary">Calculate</button></p>
-                    <h3 class="text-center  mt-2">Total Expense : </h3>
-                    <h3 class="text-center  mt-2">Balance :  </h3>
+                    <p class="text-center fw-bolder">Food: <input class="ms-2 input" id="food" type="text"></p>
+                    <p class="text-center fw-bolder">Rent:  <input class="ms-3 input" id="rent" type="text"></p>
+                    <p class="text-center fw-bolder">Cloths: <input type="text input" id="cloths"></p>
+                    <p class="text-center fw-bolder" id="calculate"> <button type="button " class="btn btn-primary">Calculate</button></p>
+                    <h3 class="text-center mt-2">Total Expense : <span id="total-expense"> </span> </h3>
+                    <h3 class="text-center mt-2">Balance : <span id="balance"> </span> </h3>
                   
                     <!-- savings Calculation -->
-                    
-                    <p class="text-center fw-bolder">Save : <input type="text" class="input"> % <button type="button" class="btn btn-primary">Save</button></p>
+
+                    <p class="text-center fw-bolder">Save : <input type="text" class="input"> % <button type="button" class="btn btn-primary" id="saving">Save</button></p>
                     <h3 class="text-center mt-2">Saving Amount : </h3>
                     <h3 class="text-center mt-2">Remaining Balance :  </h3>
                 </div>
@@ -50,5 +50,6 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/expense.js"></script>
 </body>
 </html>
