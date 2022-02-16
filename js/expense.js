@@ -1,10 +1,25 @@
+// errorMessage
+function errorMessage(expenseId){
+    if(isNaN(document.getElementById(expenseId).value)){
+        alert('Please Put a number');
+    }
+    if(parseFloat(document.getElementById(expenseId).value) < 0){
+        alert('Please Put a Number Greater Than 0');
+    }
+    
+}
 // Expense Total
 function totalExpense(){
     const myFood = document.getElementById('food').value;
+    errorMessage('food');
+
     const myRent = document.getElementById('rent').value;
+    errorMessage('rent');
+
     const myCloths = document.getElementById('cloths').value;
+    errorMessage('cloths');
     const total =  parseFloat(myFood) + parseFloat(myRent) + parseFloat(myCloths);
-   
+   return total;
     
 }
 
