@@ -1,15 +1,19 @@
-// Total Expense and My Balance
-document.getElementById('calculate').addEventListener('click',function(){
-    // Expense Total
+// Expense Total
+function totalExpense(){
     const myFood = document.getElementById('food').value;
     const myRent = document.getElementById('rent').value;
     const myCloths = document.getElementById('cloths').value;
     const total =  parseFloat(myFood) + parseFloat(myRent) + parseFloat(myCloths);
    
-    let myExpenses =document.getElementById('total-expense');
+    
+}
 
+document.getElementById('calculate').addEventListener('click',function(){
+    
+   const total = totalExpense();
+
+   let myExpenses =document.getElementById('total-expense');
     myExpenses.innerText = total;
- 
 
     // Balance
     const myIncome = document.getElementById('income').value;
@@ -18,8 +22,6 @@ document.getElementById('calculate').addEventListener('click',function(){
     myBalance.innerText = leftMoney;
 
 });
-
-
 
 document.getElementById('saving').addEventListener('click',function(){
     // Saving percentage
@@ -31,20 +33,16 @@ document.getElementById('saving').addEventListener('click',function(){
     const savingAmount = document.getElementById('saving-amount');
     savingAmount.innerText = mySave;
 
+    // Total Expense
+    const total = totalExpense();
+
     // Remaining Balance
     const RemainingBalance = document.getElementById('remaining-amount');
-    
-    // Total Expense
-    const myFood = document.getElementById('food').value;
-    const myRent = document.getElementById('rent').value;
-    const myCloths = document.getElementById('cloths').value;
-    const total =  parseFloat(myFood) + parseFloat(myRent) + parseFloat(myCloths);
-
-
-    const Income = document.getElementById('income').value;
-    const leftMoney = Income - total;
+    const income = document.getElementById('income').value;
+    const leftMoney = income - total;
     const myRemaining = leftMoney - mySave;
     RemainingBalance.innerText = myRemaining;
+    
 });
 
 
