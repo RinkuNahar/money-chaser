@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>My Expenses</title>
+</head>
+<body>
+    <!-- Heading -->
+    <header>
+        <h1 class="p-5 text-center fw-bold">My Monthly Expenses</h1>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="d-flex flex-row bd-highlight mb-3 gap-4 justify-content-center w-100">
+                <!-- Image -->
+                
+                <div class=" bd-highlight  w-50">
+                    <img src="images/budget.jpg" class=" rounded-start " alt="...">
+                </div>
+                <div class=" bd-highlight calculation ">
+
+                    <!-- Calculate Expenses -->
+              
+                    <h3 class="text-center mt-2">Income</h3>
+                    <p class="text-center fw-bolder">Income : <input class="ms-2 input" type="text"></p>
+                    <h3 class="text-center  mt-2">Expense</h3>
+                    <p class="text-center fw-bolder">Food: <input class="ms-2 input" type="text"></p>
+                    <p class="text-center fw-bolder">Rent:  <input class="ms-3 input" type="text"></p>
+                    <p class="text-center fw-bolder">Cloths: <input type="text input"></p>
+                    <p class="text-center fw-bolder"> <button type="button " class="btn btn-primary">Calculate</button></p>
+                    <h3 class="text-center  mt-2">Total Expense : </h3>
+                    <h3 class="text-center  mt-2">Balance :  </h3>
+                  
+                    <!-- savings Calculation -->
+                    
+                    <p class="text-center fw-bolder">Save : <input type="text" class="input"> % <button type="button" class="btn btn-primary">Save</button></p>
+                    <h3 class="text-center mt-2">Saving Amount : </h3>
+                    <h3 class="text-center mt-2">Remaining Balance :  </h3>
+                </div>
+            </div>
+
+        </section>
+
+        
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

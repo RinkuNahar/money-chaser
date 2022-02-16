@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@500;700&display=swap');
+body{
+    font-family: 'Dancing Script', cursive;
+font-family: 'Poppins', sans-serif;
+}
+.card-height{
+        height: 580px;
+}
+img{
+    height: 580px;
+    width: 95%;
+}
+.calculation{
+    height:580px;
+    width: 40%;
+    background-color: rgba(219, 219, 219, 0.644);
+}
+
