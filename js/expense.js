@@ -13,13 +13,16 @@ function totalExpense(){
     const myFood = document.getElementById('food').value;
     errorMessage('food');
 
+
     const myRent = document.getElementById('rent').value;
     errorMessage('rent');
 
     const myCloths = document.getElementById('cloths').value;
     errorMessage('cloths');
     const total =  parseFloat(myFood) + parseFloat(myRent) + parseFloat(myCloths);
+   
    return total;
+  
     
 }
 
@@ -40,7 +43,9 @@ document.getElementById('calculate').addEventListener('click',function(){
     if(total > parseFloat(document.getElementById('income').value)){
         alert('You Can Not Expense Money More Than Your Income');
         myBalance.innerText = 0;
+        myExpenses.innerText = 0;
     }
+   
    
 });
 
@@ -70,6 +75,7 @@ document.getElementById('saving').addEventListener('click',function(){
         RemainingBalance.innerText = 0;
         savingAmount.innerText = 0;
     }
+  
 });
 
 

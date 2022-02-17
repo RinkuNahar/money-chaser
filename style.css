@@ -15,3 +15,51 @@ img{
     width: 40%;
     background-color: rgba(219, 219, 219, 0.644);
 }
+
+/* Mobile Device */
+@media (max-width: 540px) {
+.media{
+    flex-direction: row;
+   flex-flow: wrap;
+    }
+.first{
+   width: 100%;
+}
+img{
+    width:  95%
+}
+
+.calculation{
+    width: 100%;
+}
+img{
+    display: block;
+    flex-wrap: wrap;
+    width: 100%; 
+}
+
+}
+
+/* Tablet Device */
+@media (max-width:768px) and (min-width:540px){
+    .media{
+        flex-direction: row;
+       flex-flow: wrap;
+        }
+    .first{
+       width: 100%;
+    }
+    img{
+        width:  95%
+    }
+    
+    .calculation{
+        width: 100%;
+    }
+    img{
+        display: block;
+        flex-wrap: wrap;
+        width: 100%; 
+    }
+    
+    }
