@@ -2,6 +2,8 @@
 function errorMessage(expenseId){
     if(isNaN(document.getElementById(expenseId).value)){
         alert('Please Put a number');
+        (document.getElementById(expenseId).value) = '';
+        
     }
     if(parseFloat(document.getElementById(expenseId).value) < 0){
         alert('Please Put a Number Greater Than 0');
@@ -13,24 +15,20 @@ function totalExpense(){
     const myFood = document.getElementById('food').value;
     errorMessage('food');
 
-
     const myRent = document.getElementById('rent').value;
     errorMessage('rent');
 
     const myCloths = document.getElementById('cloths').value;
     errorMessage('cloths');
     const total =  parseFloat(myFood) + parseFloat(myRent) + parseFloat(myCloths);
-   
    return total;
-  
     
 }
 
 document.getElementById('calculate').addEventListener('click',function(){
     
    const total = totalExpense();
-
-   
+  
    let myExpenses =document.getElementById('total-expense');
     myExpenses.innerText = total;
 
@@ -43,9 +41,7 @@ document.getElementById('calculate').addEventListener('click',function(){
     if(total > parseFloat(document.getElementById('income').value)){
         alert('You Can Not Expense Money More Than Your Income');
         myBalance.innerText = 0;
-        myExpenses.innerText = 0;
     }
-   
    
 });
 
